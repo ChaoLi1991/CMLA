@@ -2,7 +2,7 @@
 
 Step1:
 ======
-  * Creat /Flickr-25K/ to save Dataset;  
+  * Creat <font color=red>/Flickr-25K/</font> to save Dataset;  
     Download Img.h5, Img.h5, Lab.h5, and Mean.hs from [here](https://drive.google.com/drive/folders/1DcgBfKRoM8dCglaOamweQu6D6CynW7B_) and save to /Flickr-25K;  
   * Creat /model/ to save CNNF network;  
     Download imagenet-vgg-f.mat from [here](https://drive.google.com/drive/folders/1bbVTWN8IVMxchM2-xnwZRhoWb-Cj6_gj);
