@@ -2,8 +2,9 @@
 
 Installation
 =====
-Tensorflow==1.12.0;   
-Python=Python 3.6.8;  
+* To install Tensorflow and Python:  
+  Tensorflow=1.12.0;   
+  Python=Python 3.6.8;  
 
 Step1:
 ======
