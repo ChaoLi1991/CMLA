@@ -8,9 +8,9 @@ Step1:
     Download imagenet-vgg-f.mat from [here](https://drive.google.com/drive/folders/1bbVTWN8IVMxchM2-xnwZRhoWb-Cj6_gj);
   * Creat /AttackHash_SSAH_Flickr/AdversarialSamples/ to save the learned Adversarial Samples;  
   * Creat /AttackHash_SSAH_Flickr/NoiseSamples/ to save the learned Perturbation;  
-  * Creat /AttackHash_SSAH_Flickr/checkpoint to save checkpoint for tensorflow models;  
+  * Creat /AttackHash_SSAH_Flickr/checkpoint/ to save checkpoint for tensorflow models;  
   * Creat /AttackHash_SSAH_Flickr/Savecode/ to save the learned hash codes;  
-  * Creat AttackHash_SSAH_Flickr/LogText for a log print;  
+  * Creat AttackHash_SSAH_Flickr/LogText/ for a log print;  
   
 Step2:
 ======
