@@ -1,4 +1,4 @@
-# CMLA
+# NeurIPS2019 Cross-Modal Learning with Adversarial Samples
 
 Step1:
 ======
