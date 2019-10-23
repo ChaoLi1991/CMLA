@@ -62,12 +62,12 @@ Param['batch_size'] = 128
 Param['SEMANTIC_EMBED'] = 512
 
 
-Param['lr_img'] = 0.0001 #0.0001
-Param['lr_txt'] = 0.01 #0.001
-Param['lr_lab'] = 0.01          #0.0001
+Param['lr_img'] = 0.0001  
+Param['lr_txt'] = 0.01  
+Param['lr_lab'] = 0.01  
 Param['lr_dis'] = 0.01
 
-Param['lr_adv_I'] = 0.5#            0.1
-Param['lr_adv_T'] = 0.002#           0.001
-Param['decay'] = 0.1         #0.5  #0.9
+Param['lr_adv_I'] = 0.5  
+Param['lr_adv_T'] = 0.002  
+Param['decay'] = 0.1  
 Param['decay_steps'] = 10
