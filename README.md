@@ -1,4 +1,4 @@
-# NeurIPS2019 Cross-Modal Learning with Adversarial Samples
+# Cross-Modal Learning with Adversarial Samples (NeurIPS2019)
 
 Step1:
 ======
