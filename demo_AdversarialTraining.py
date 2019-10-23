@@ -259,14 +259,14 @@ with tf.Session(config=gpuconfig) as sess:
                 print('\n[*] Loading Pretained Adversarial Model...')
                 print('\n[*] Loading Pretained Adversarial Model...', sep="\n", file=Log_Txt)
 
-                Advmodel_dir = "%s_%s_%s" % (Param['dataset_dir'], Param['bit'], 'AdvTrain')
+                Advmodel_dir = "%s_%s_%s" % (Param['dataset_name'], Param['bit'], 'AdvTrain')
                 AdvModel_checkpoint_dir = os.path.join(Param['checkpoint_dir'], Advmodel_dir)
                 env.SSAH._load(env.saver, AdvModel_checkpoint_dir)
 
             else:
                 print('\n[*] Loading Pretrained Basic Model...')
                 print('\n[*] Loading Pretrained Basic Model...', sep="\n", file=Log_Txt)
-                model_dir = "%s_%s_%s" % (Param['dataset_dir'], Param['bit'], 'BasTrain')
+                model_dir = "%s_%s_%s" % (Param['dataset_name'], Param['bit'], 'BasTrain')
                 checkpoint_dir = os.path.join(Param['checkpoint_dir'], model_dir)
                 env.SSAH._load(env.saver, checkpoint_dir)
 
@@ -296,7 +296,7 @@ with tf.Session(config=gpuconfig) as sess:
             # ============== Loading pretrain model ============= #
             print('\n[*] Loading BasicModel model!')
             print('\n[*] Loading BasicModel model!', sep="\n", file=Log_Txt)
-            model_dir = "%s_%s_%s" % (Param['dataset_dir'], Param['bit'], 'BasTrain')
+            model_dir = "%s_%s_%s" % (Param['dataset_name'], Param['bit'], 'BasTrain')
             checkpoint_dir = os.path.join(Param['checkpoint_dir'], model_dir)
             env.SSAH._load(env.saver, checkpoint_dir)
 
@@ -337,7 +337,7 @@ with tf.Session(config=gpuconfig) as sess:
             # ============== Loading pretrain model ============= #
             print('\n[*] Loading BasicModel model!')
             print('\n[*] Loading BasicModel model!', sep="\n", file=Log_Txt)
-            model_dir = "%s_%s_%s" % (Param['dataset_dir'], Param['bit'], 'BasTrain')
+            model_dir = "%s_%s_%s" % (Param['dataset_name'], Param['bit'], 'BasTrain')
             checkpoint_dir = os.path.join(Param['checkpoint_dir'], model_dir)
             env.SSAH._load(env.saver, checkpoint_dir)
 
@@ -402,7 +402,7 @@ with tf.Session(config=gpuconfig) as sess:
             print('\n[*] Loading Retrained AdvTrain Model...')
             print('\n[*] Loading Retrained AdvTrain Model...', sep="\n", file=Log_Txt)
 
-            model_dir = "%s_%s_%s" % (Param['dataset_dir'], Param['bit'], 'AdvTrain')
+            model_dir = "%s_%s_%s" % (Param['dataset_name'], Param['bit'], 'AdvTrain')
             checkpoint_dir = os.path.join(Param['checkpoint_dir'], model_dir, str(Iters))
             env.SSAH._load(env.saver, checkpoint_dir)
 

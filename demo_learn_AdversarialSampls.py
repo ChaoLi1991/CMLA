@@ -258,14 +258,14 @@ with tf.Session(config=gpuconfig) as sess:
                 print('\n[*] Loading Pretained Adversarial Model...')
                 print('\n[*] Loading Pretained Adversarial Model...', sep="\n", file=Log_Txt)
 
-                Advmodel_dir = "%s_%s_%s" % (Param['dataset_dir'], Param['bit'], 'AdvTrain')
+                Advmodel_dir = "%s_%s_%s" % (Param['dataset_name'], Param['bit'], 'AdvTrain')
                 AdvModel_checkpoint_dir = os.path.join(Param['checkpoint_dir'], Advmodel_dir)
                 env.SSAH._load(env.saver, AdvModel_checkpoint_dir)
 
             else:
                 print('\n[*] Loading Pretrained Basic Model...')
                 print('\n[*] Loading Pretrained Basic Model...', sep="\n", file=Log_Txt)
-                model_dir = "%s_%s_%s" % (Param['dataset_dir'], Param['bit'], 'BasTrain')
+                model_dir = "%s_%s_%s" % (Param['dataset_name'], Param['bit'], 'BasTrain')
                 checkpoint_dir = os.path.join(Param['checkpoint_dir'], model_dir)
                 env.SSAH._load(env.saver, checkpoint_dir)
 
@@ -302,7 +302,7 @@ with tf.Session(config=gpuconfig) as sess:
             print('Text  query  Text: %3.3f\n' % MAP_T2T, sep="\n", file=Log_Txt)
 
             # Saving adversarial codes
-            Adv_dataset_bit = "%s_%s_adv_%sIters_%s.mat" % (Param['dataset_dir'], str(env.BIT), str(Iters), adv_itm)
+            Adv_dataset_bit = "%s_%s_adv_%sIters_%s.mat" % (Param['dataset_name'], str(env.BIT), str(Iters), adv_itm)
             Adv_savePath = os.path.join(Param['code_dir'], Adv_dataset_bit)
             if os.path.exists(Adv_savePath):
                 os.remove(Adv_savePath)
@@ -322,7 +322,7 @@ with tf.Session(config=gpuconfig) as sess:
             # ============== Loading pretrain model ============= #
             print('\n[*] Loading BasicModel model!')
             print('\n[*] Loading BasicModel model!', sep="\n", file=Log_Txt)
-            model_dir = "%s_%s_%s" % (Param['dataset_dir'], Param['bit'], 'BasTrain')
+            model_dir = "%s_%s_%s" % (Param['dataset_name'], Param['bit'], 'BasTrain')
             checkpoint_dir = os.path.join(Param['checkpoint_dir'], model_dir)
             env.SSAH._load(env.saver, checkpoint_dir)
 

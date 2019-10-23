@@ -42,7 +42,7 @@ class SSAH(object):
         self.numClass = Param['numClass']
         self.dimText = Param['dimText']
         self.checkpoint_dir = Param['checkpoint_dir']
-        self.dataset_dir = Param['dataset_dir']
+        self.dataset_dir = Param['dataset_name']
         self.BIT = Param['bit']
         self.num_train = Param['num_train']
         self.batch_size = Param['batch_size']
@@ -200,13 +200,13 @@ class SSAH(object):
 
             if Model == 'BasicModel' and np.mod(epoch, self.save_freq)==0 and epoch>0:
                 print('\n[*] Saving the training model')
-                model_dir = "%s_%s_%s" % (Param['dataset_dir'], Param['bit'], 'BasTrain')
+                model_dir = "%s_%s_%s" % (Param['dataset_name'], Param['bit'], 'BasTrain')
                 checkpoint_dir = os.path.join(Param['checkpoint_dir'], model_dir)
                 self._save(checkpoint_dir, epoch, model_name=Model)
 
             if Model == 'FinetuneModel' and np.mod(epoch, self.save_freq)==0 and epoch>0:
                 print('\n[*] Saving the Adversarial Model...')
-                model_dir = "%s_%s_%s" % (Param['dataset_dir'], Param['bit'], 'AdvTrain')
+                model_dir = "%s_%s_%s" % (Param['dataset_name'], Param['bit'], 'AdvTrain')
                 checkpoint_dir = os.path.join(Param['checkpoint_dir'], model_dir, str(Iters))
                 self._save(checkpoint_dir, epoch, model_name=Model)
 

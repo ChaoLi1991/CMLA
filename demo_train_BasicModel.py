@@ -244,7 +244,7 @@ with tf.Session(config=gpuconfig) as sess:
                 print('\n[*] Loading Basic Model...')
                 print('\n[*] Loading Basic Model...', sep="\n", file=Log_Txt)
 
-                Basmodel_dir = "%s_%s_%s" % (Param['dataset_dir'], Param['bit'], 'BasTrain')
+                Basmodel_dir = "%s_%s_%s" % (Param['dataset_name'], Param['bit'], 'BasTrain')
                 BasicModel_checkpoint_dir = os.path.join(Param['checkpoint_dir'], Basmodel_dir)
 
                 env.SSAH._load(env.saver, BasicModel_checkpoint_dir)
@@ -259,7 +259,7 @@ with tf.Session(config=gpuconfig) as sess:
 
             print('\n[*] Loading Basic Model...')
             print('\n[*] Loading Basic Model...', sep="\n", file=Log_Txt)
-            Basmodel_dir = "%s_%s_%s" % (Param['dataset_dir'], Param['bit'], 'BasTrain')
+            Basmodel_dir = "%s_%s_%s" % (Param['dataset_name'], Param['bit'], 'BasTrain')
             BasicModel_checkpoint_dir = os.path.join(Param['checkpoint_dir'], Basmodel_dir)
             env.SSAH._load(env.saver, BasicModel_checkpoint_dir)
 
@@ -279,7 +279,7 @@ with tf.Session(config=gpuconfig) as sess:
             print('Text  query  Text: %3.3f\n' % MAP_T2T, sep="\n", file=Log_Txt)
 
 
-            dataset_bit = "%s_%s_clean" % (Param['dataset_dir'], str(env.BIT))
+            dataset_bit = "%s_%s_clean" % (Param['dataset_name'], str(env.BIT))
             savePath = os.path.join(Param['code_dir'], dataset_bit + '.mat')
             if os.path.exists(savePath):
                 os.remove(savePath)
