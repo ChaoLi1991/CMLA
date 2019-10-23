@@ -14,6 +14,6 @@ Step1:
   
 Step2:
 ======
-  * run demo_train_BasicModel.py to train a basic deep cross-modal hash network (CVPR18_SSAH);  
+  * run demo_train_BasicModel.py to train a basic deep cross-modal hash network ([CVPR18_SSAH](http://openaccess.thecvf.com/content_cvpr_2018/papers/Li_Self-Supervised_Adversarial_Hashing_CVPR_2018_paper.pdf));  
   * run demo_learn_AdversarialSampls.py to learn adversarial samples;
   * run demo_AdversarialTraining.py to finetuning the basic model;  
