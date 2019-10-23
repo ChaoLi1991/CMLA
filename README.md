@@ -10,6 +10,7 @@ Step1:
   * Creat /AttackHash_SSAH_Flickr/NoiseSamples/ to save the learned Perturbation;  
   * Creat /AttackHash_SSAH_Flickr/checkpoint to save checkpoint for tensorflow models;  
   * Creat /AttackHash_SSAH_Flickr/Savecode/ to save the learned hash codes;  
+  * Creat AttackHash_SSAH_Flickr/LogText for a log print;  
   
 Step2:
 ======
