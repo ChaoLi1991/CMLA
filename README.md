@@ -1,5 +1,10 @@
 # Cross-Modal Learning with Adversarial Samples (NeurIPS2019)
 
+Installation
+=====
+Tensorflow==1.12.0;   
+Python=Python 3.6.8;  
+
 Step1:
 ======
   * Creat __/Flickr-25K/__ to save Dataset;  
