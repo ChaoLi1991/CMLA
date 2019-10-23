@@ -14,7 +14,7 @@ Param['Tagpath']  = '/home/chao/HashWorks/Project/Flickr-25K/Tag.h5'
 Param['Labpath']  = '/home/chao/HashWorks/Project/Flickr-25K/Lab.h5'
 Param['Meanpath']  = '/home/chao/HashWorks/Project/Flickr-25K/Mean.h5'
 
-Param['dataset_dir'] = 'Flickr-25K'
+Param['dataset_name'] = 'Flickr-25K'
 Param['MODEL_DIR'] = '/home/chao/HashWorks/model/imagenet-vgg-f.mat' #discriminator_img  pretrain model
 Param['adv_dir'] = '/home/chao/HashWorks/NIPS19/AttackHash_SSAH_Flickr/AdversarialSamples/'
 Param['noi_dir'] = '/home/chao/HashWorks/NIPS19/AttackHash_SSAH_Flickr/NoiseSamples/'
